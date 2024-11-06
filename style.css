@@ -1,0 +1,98 @@
+.story{
+    width: 300px;
+    height: 400px;
+    margin: 150px auto;
+    object-fit: cover;
+    overflow: hidden;
+    position: relative;
+}
+
+.story:hover{
+    cursor: pointer;
+}
+
+.story:hover .save{
+    transform: translateY(0);
+}
+
+.story:hover .position{
+    transform: translateX(0);
+}
+
+.story:hover .position2{
+    transform: translateX(0);
+}
+
+.story:hover .position3{
+    transform: translateX(0);
+}
+
+.story::before{
+    content: "";
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(0,0,0,0.5019257703081232) 57%, rgba(0,0,0,0.5019257703081232) 96%);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.story img{
+    width: 100%;
+    height: 100%;
+}
+
+.save{
+    position: absolute;
+    top: 35px;
+    right: 20px;
+    width: 38px;
+    text-align: center;
+    border-radius: 25px;
+    padding: 2px;
+    color: white;
+    background-color: crimson;
+    transform: translateY(-180px);
+    transition: 1s;
+}
+
+.icons{
+    background-color: white;
+}
+
+.position{
+    width: 120px;
+    text-align: center;
+    bottom: 25px;
+    left: 30px;
+    border-radius: 25px;
+    position: absolute;
+    transform: translateX(-180px);
+    transition: 1s;
+}
+
+.position2{
+    text-align: center;
+    bottom: 25px;
+    left: 180px;
+    border-radius: 25px;
+    position: absolute;
+    transform: translateX(360px);
+    transition: 1s;
+}
+
+.position3{
+    text-align: center;
+    bottom: 25px;
+    right: 20px;
+    border-radius: 25px;
+    position: absolute;
+    transform: translateX(180px);
+    transition: 1s;
+}
+
+.icons img{
+    border-radius: 25px;
+    background-color: white;
+    width: 20px;
+    height: 20px;
+}
